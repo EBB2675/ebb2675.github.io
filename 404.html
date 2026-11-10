@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Page not found</title>
+<script>
+  var p = location.pathname;
+  if (/^\/mermantics(\/|$)/.test(p)) {
+    location.replace("https://bamresearch.github.io" + p + location.search + location.hash);
+  }
+</script>
+<p>Page not found.</p>
